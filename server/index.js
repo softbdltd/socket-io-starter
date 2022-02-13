@@ -35,6 +35,10 @@ const getVisitors = () => {
     });
 }
 
+const addNewUser = (userName, socketId) => {
+        !clients.some((user) => user.username === userName && clients.push({userName, socketId}))
+}
+
 const emitVisitors = () => {
     io.emit("visitors", getVisitors());
 }
@@ -70,6 +74,18 @@ io.on('connection', (socket) => {
         io.to(user.room).emit('roomData', {room: user.room, users: getUsersInRoom(user.room)}); //send a new message when user leaves
 
     })
+
+    socket.on('newUser', (userName) => {
+        console.log('userName->', userName);
+        addNewUser(userName, socket.id)
+    });
+
+    socket.on('setPost', (post)=> {
+        console.count(post)
+        io.emit('getPost', post)
+    })
+
+
     socket.on('disconnect', () => {
         clients.splice(clients.indexOf(socket), 1);
         emitVisitors();

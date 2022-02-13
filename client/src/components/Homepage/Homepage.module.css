@@ -1,0 +1,119 @@
+.login {
+    width: 360px;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 50px auto;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.form button, .add_post_btn, .join_room {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 60%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+    background: #3dbd44;
+}
+
+.form .register_form {
+    /*display: none;*/
+}
+
+.add_post_btn {
+    background: #268d28;
+    width: 360px;
+    margin-top: 50px;
+}
+
+.add_post_btn:hover, .add_post_btn:active, .add_post_btn:focus {
+    background: #0fa216;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Todo: form is inspired from https://codepen.io/colorlib/pen/rxddKy */
+
+.user {
+    background: #07252d;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem;
+    color: #F5DEB3FF;
+    margin: 40px auto;
+    max-width: 630px;
+}
+
+.join_room {
+    text-decoration: none;
+}
+
+.user_span {
+    position: relative;
+    font-size: 1em;
+    font-style: italic;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+
+    }
+}
+
+/*Todo: this text style is inspired by https://codepen.io/vkive/pen/abLrqNj*/

@@ -1,0 +1,17 @@
+.posts{
+    width: 360px;
+    margin: auto;
+}
+
+.post {
+    position: relative;
+    color: #0a9812;
+    z-index: 1;
+    background: #FFFFFF;
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0 auto 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
